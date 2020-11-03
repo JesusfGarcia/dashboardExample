@@ -1,0 +1,66 @@
+.loginContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(59, 89, 120);
+  background: radial-gradient(
+    circle,
+    rgba(59, 89, 120, 1) 0%,
+    rgba(43, 64, 85, 1) 25%,
+    rgba(31, 47, 62, 1) 50%,
+    rgba(29, 44, 59, 1) 75%,
+    rgba(21, 32, 43, 1) 100%
+  );
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px;
+  border-radius: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  justify-content: space-evenly;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.card span {
+  font-size: 40px;
+  align-self: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+.card input {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0px;
+  -webkit-box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.45);
+  border-radius: 0;
+  border: 0px solid transparent;
+  color: #4b4b4b;
+}
+
+.card button {
+  color: white;
+  background-color: #4b4b4b;
+  border: solid 0px transparent;
+  border-radius: 5px;
+  padding: 5px 5px;
+  font-style: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #585858;
+}
