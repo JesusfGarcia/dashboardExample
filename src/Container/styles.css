@@ -1,0 +1,123 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+}
+
+.header {
+  background-color: #15202b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 50px;
+  padding: 5px 20px;
+}
+
+.header .switch {
+  cursor: pointer;
+}
+
+.header .switch:hover {
+  animation-name: icon;
+  animation-duration: .5s;
+}
+
+@keyframes icon {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-90deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.header .profile {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 15px;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.header .profile-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  margin-left: 5px;
+}
+
+/*SideBar*/
+
+.container-body {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #15202b;
+  height: 100%;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  border-right: 1px solid #213244;
+  transition: all 0.3s ease-out;
+}
+
+.sidebarHide {
+  position: fixed;
+  margin-left: -200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #15202b;
+  height: 100%;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 10px 0px;
+  border-right: 1px solid #213244;
+  transition: all 0.3s ease-out;
+}
+
+.sidebar-item {
+  color: white;
+  font-size: 18px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.sidebar-item:hover {
+  background-color: #213244;
+  border-left: 2px solid white;
+}
+
+.displayer {
+  flex: 1;
+  transition: all 0.3s ease-out;
+  padding: 10px 20px;
+}
