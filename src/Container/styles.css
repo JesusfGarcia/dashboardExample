@@ -85,7 +85,7 @@
 
 .sidebarHide {
   position: fixed;
-  margin-left: -200px;
+  margin-left: -250px;
   display: flex;
   flex-direction: column;
   background-color: #15202b;
