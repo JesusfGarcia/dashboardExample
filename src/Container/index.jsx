@@ -12,6 +12,7 @@ export const DashboardContext = React.createContext();
 
 export default function ({ history }) {
   const [openSidebar, setOpenSidebar] = React.useState(true);
+
   return (
     <div className="container">
       <DashboardContext.Provider

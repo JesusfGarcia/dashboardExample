@@ -23,7 +23,7 @@
 
 .header .switch:hover {
   animation-name: icon;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
 }
 
 @keyframes icon {
@@ -98,7 +98,7 @@
 }
 
 .sidebar-item {
-  color: white;
+  color: #cacaca;
   font-size: 18px;
   height: 50px;
   display: flex;
@@ -109,6 +109,21 @@
   margin-bottom: 5px;
   padding-left: 10px;
   width: 100%;
+}
+
+.sidebar-item-selected {
+  color: white;
+  background-color: #213244;
+  border-left: 2px solid white;
+  font-size: 18px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding-left: 10px;
 }
 
 .sidebar-item:hover {
