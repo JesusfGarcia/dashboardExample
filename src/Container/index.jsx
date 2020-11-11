@@ -13,7 +13,7 @@ export const DashboardContext = React.createContext();
 export default function ({ history }) {
   return (
     <div className="container">
-      <DashboardContext.Provider value={{ hola: 4 }}>
+      <DashboardContext.Provider value={{ history, routes }}>
         <Header />
         <div className="container-body">
           <Sidebar />
